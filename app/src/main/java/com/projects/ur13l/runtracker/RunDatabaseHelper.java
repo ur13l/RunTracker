@@ -89,7 +89,7 @@ public class RunDatabaseHelper extends SQLiteOpenHelper {
     public LocationCursor queryLastLocationForRun(long runId) {
         Cursor wrapped = getReadableDatabase().query(TABLE_LOCATION,
                 null,
-                COLUMN_RUN_ID + " = ?",
+                COLUMN_LOCATION_RUN_ID + " = ?",
                 new String[]{ String.valueOf(runId) },
                 null,
                 null,
